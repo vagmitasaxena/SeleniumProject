@@ -36,8 +36,6 @@ public class PasswordValidation {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
-		//screenShot = new ScreenShot(driver); 
-		// open the browser 
 		driver.get(baseUrl);
 	}
 	

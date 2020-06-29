@@ -4,13 +4,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -38,15 +36,13 @@ public class AddProductDetails {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
-		//screenShot = new ScreenShot(driver); 
-		// open the browser 
 		driver.get(baseUrl);
 	}
 	
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-	//	driver.quit();
+		driver.quit();
 	}
 	@Test
 	public void AddProductInCart() throws InterruptedException {
@@ -64,12 +60,12 @@ public class AddProductDetails {
 		driver.switchTo().frame(0);
 		WebElement addToCart=driver.findElement(By.xpath("//button[@id='button-cart']"));
 		act.moveToElement(addToCart).click().build().perform();
-		Thread.sleep(3000);
-    //	Alert alertpop=driver.switchTo().alert();
-	//	String alertTextMessage=alertpop.getText();
-	//	System.out.println(alertTextMessage);
-		driver.switchTo().parentFrame();	
-		WebElement CartItems=driver.findElement(By.xpath("//h3[@class='heading']//span[@class='tb_items']"));
+	    driver.navigate().refresh();
+	    WebElement CartItems=driver.findElement(By.xpath("//i[@class='tb_icon ico-linea-ecommerce-bag']"));
 		act.moveToElement(CartItems).build().perform();
+		driver.findElement(By.linkText("View Cart")).click();
+		Boolean actualResult=driver.findElement(By.xpath("//div[@class='cart-info tb_min_w_500']//table/tbody/tr/td[2]/a")).isDisplayed();
+		Boolean expectedResult=true;
+		Assert.assertEquals(actualResult, expectedResult);
  	}
 }
