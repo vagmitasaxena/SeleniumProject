@@ -27,7 +27,7 @@ public class GenericMethods {
 	 * @see type is id, name, xpath, text, partialtext
 	 * @see locator will be the element to be found on DOM 
 	 * @return  WebElement
-	 * this method shall give provided it has single enty in the DOM
+	 * this method shall give provided it has single entry in the DOM
 	 */
 	public WebElement getElement(String locator, String type){
 		WebElement element  = null;

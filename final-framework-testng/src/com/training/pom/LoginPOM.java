@@ -22,6 +22,37 @@ public class LoginPOM {
 	@FindBy(id="formLogin_submitAuth")
 	private WebElement loginBtn; 
 	
+	@FindBy(id="input-email")
+	private WebElement emailId; 
+	
+	@FindBy(id="input-password")
+	private WebElement emailPassword; 
+	
+	@FindBy(id="input-confirm")
+	private WebElement emailConfirmPassword; 
+	
+	@FindBy(xpath="//input[@type='submit']")
+	private WebElement emailLoginBtn; 
+	
+	public void sendUserEmail(String emailId) {
+		this.emailId.clear();
+		this.emailId.sendKeys(emailId);
+	}
+	
+	public void sendUserEmailPassword(String emailPassword) {
+		this.emailPassword.clear();
+		this.emailPassword.sendKeys(emailPassword);
+	}
+	
+	public void sendUserEmailConfirmPassword(String emailConfirmPassword) {
+		this.emailConfirmPassword.clear();
+		this.emailConfirmPassword.sendKeys(emailConfirmPassword);
+	}
+	
+	public void clickEmailLoginBtn() {
+		this.emailLoginBtn.click(); 
+	}
+	
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
