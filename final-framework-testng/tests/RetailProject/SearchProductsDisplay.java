@@ -2,13 +2,10 @@ package RetailProject;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.List;
 import java.util.Properties;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -16,14 +13,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.training.pom.LoginPOM;
+import com.training.pom.SearchProductsDisplayPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 public class SearchProductsDisplay {
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	private SearchProductsDisplayPOM searchProductsDisplayPOM;
 	private static Properties properties;
 	
 	@BeforeClass
@@ -36,7 +33,7 @@ public class SearchProductsDisplay {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver); 
+		searchProductsDisplayPOM = new SearchProductsDisplayPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		driver.get(baseUrl);
 	}
@@ -53,23 +50,31 @@ public class SearchProductsDisplay {
 	//	act.moveToElement(shopLink).build().perform();
 	//	WebElement ethnicLink=driver.findElement(By.xpath("//li[@class='tb_menu_category_VLHXC tb_link']"));
 	//	act.moveToElement(ethnicLink).click().build().perform();
-		loginPOM.moveToShopLink();
+		searchProductsDisplayPOM.moveToShopLink();
 		Thread.sleep(3000);
-		loginPOM.moveToEthnicLinkClick();
+		searchProductsDisplayPOM.moveToEthnicLinkClick();
 //		driver.findElement(By.xpath("//div[@class='sort']//select")).click();
 //      WebElement SortBy=driver.findElement(By.xpath("//div[@class='sort']//select"));
-		loginPOM.clickSortLink();
-		WebElement SortBy=loginPOM.SortLink();
+		searchProductsDisplayPOM.clickSortLink();
+		WebElement SortBy=searchProductsDisplayPOM.SortLink();
 		String dropdownvalues=SortBy.getText();
 		System.out.println(dropdownvalues);
 		Select SortList=new Select(SortBy);
         SortList.selectByVisibleText("Name (A - Z)");
+        String selected=SortList.getFirstSelectedOption().getText();
+        String expected="Name (A - Z)";
+        System.out.println(selected);
+        Assert.assertEquals(selected,expected);
         Thread.sleep(8000); 
 //        driver.findElement(By.xpath("//div[@class='sort']//select")).click();
-        loginPOM.clickSortLink();
+        searchProductsDisplayPOM.clickSortLink();
 		driver.navigate().refresh();
 		Select sel = new Select(SortBy);
 		sel.selectByVisibleText("Rating (Highest)");
+		selected=SortList.getFirstSelectedOption().getText();
+		expected="Rating (Highest)";
+        System.out.println(selected);
+        Assert.assertEquals(selected,expected);
         Thread.sleep(3000);
 	}
 }

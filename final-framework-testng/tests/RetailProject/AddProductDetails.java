@@ -6,22 +6,20 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.training.pom.LoginPOM;
+import com.training.pom.AddProductDetailsPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 public class AddProductDetails {
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	private AddProductDetailsPOM AddProductDetailsPOM;
 	private static Properties properties;
 	
 	@BeforeClass
@@ -34,7 +32,7 @@ public class AddProductDetails {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver); 
+		AddProductDetailsPOM = new AddProductDetailsPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		driver.get(baseUrl);
 	}
@@ -57,20 +55,21 @@ public class AddProductDetails {
 	//	act.moveToElement(ItemLink).build().perform();
 	//	WebElement SelectedItemLink=driver.findElement(By.xpath("//div[@id='ProductsSystem_QQI8r357']/div[1]/div[2]/div/div[2]/div[2]/a/span"));
 	//	act.moveToElement(SelectedItemLink).click().build().perform();
-		loginPOM.moveToShopLink();
+		AddProductDetailsPOM.moveToShopLink();
 		Thread.sleep(3000);
-		loginPOM.moveToEthnicLinkClick();
-		loginPOM.moveToItemLink();
-		loginPOM.moveToSelectedItemLinkClick();
+		AddProductDetailsPOM.moveToEthnicLinkClick();
+		AddProductDetailsPOM.moveToItemLink();
+		AddProductDetailsPOM.moveToSelectedItemLinkClick();
 		Thread.sleep(3000);
 		driver.switchTo().frame(0);
 	//	WebElement addToCart=driver.findElement(By.xpath("//button[@id='button-cart']"));
 	//	act.moveToElement(addToCart).click().build().perform();
-		loginPOM.moveToAddToCartLinkClick();
+		AddProductDetailsPOM.moveToAddToCartLinkClick();
+		Thread.sleep(3000);
 	    driver.navigate().refresh();
 	 //   WebElement CartItems=driver.findElement(By.xpath("//i[@class='tb_icon ico-linea-ecommerce-bag']"));
 	//	act.moveToElement(CartItems).build().perform();
-	    loginPOM.moveToCartItemsLink();
+	    AddProductDetailsPOM.moveToCartItemsLink();
 		driver.findElement(By.linkText("View Cart")).click();
 		Boolean actualResult=driver.findElement(By.xpath("//div[@class='cart-info tb_min_w_500']//table/tbody/tr/td[2]/a")).isDisplayed();
 		Boolean expectedResult=true;
