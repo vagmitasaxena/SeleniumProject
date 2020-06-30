@@ -46,12 +46,14 @@ public class PasswordValidation {
 	}
 	@Test
 	public void validLoginTest() throws InterruptedException {
-        WebElement accountLink=driver.findElement(By.xpath("//li[@class='tb_link dropdown tb_menu_system_account_account']"));
-		Actions act=new Actions(driver);
-		act.moveToElement(accountLink).build().perform();
+     //   WebElement accountLink=driver.findElement(By.xpath("//li[@class='tb_link dropdown tb_menu_system_account_account']"));
+     //  Actions act=new Actions(driver);
+	 //	 act.moveToElement(accountLink).build().perform();
+	//	WebElement loginLink=driver.findElement(By.xpath("//li[@class='tb_link tb_menu_system_account_login']"));
+	//	act.moveToElement(loginLink).click().build().perform();
+		loginPOM.moveToAccountLink();
 		Thread.sleep(3000);
-		WebElement loginLink=driver.findElement(By.xpath("//li[@class='tb_link tb_menu_system_account_login']"));
-		act.moveToElement(loginLink).click().build().perform();
+		loginPOM.moveToLoginLinkClick();	
 		loginPOM.sendUserEmail("sar_elec@yahoo.com");
 		loginPOM.sendUserEmailPassword("sarita");
 		loginPOM.clickEmailLoginBtn();

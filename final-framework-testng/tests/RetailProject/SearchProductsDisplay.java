@@ -48,22 +48,27 @@ public class SearchProductsDisplay {
 	}
 	@Test
 	public void SortingTest() throws InterruptedException {
-        WebElement shopLink=driver.findElement(By.id("menu_all_categories_Menu_VIfWm2LT_VLHXC"));
-		Actions act=new Actions(driver);
-		act.moveToElement(shopLink).build().perform();
+    //    WebElement shopLink=driver.findElement(By.id("menu_all_categories_Menu_VIfWm2LT_VLHXC"));
+	//	Actions act=new Actions(driver);
+	//	act.moveToElement(shopLink).build().perform();
+	//	WebElement ethnicLink=driver.findElement(By.xpath("//li[@class='tb_menu_category_VLHXC tb_link']"));
+	//	act.moveToElement(ethnicLink).click().build().perform();
+		loginPOM.moveToShopLink();
 		Thread.sleep(3000);
-		WebElement ethnicLink=driver.findElement(By.xpath("//li[@class='tb_menu_category_VLHXC tb_link']"));
-		act.moveToElement(ethnicLink).click().build().perform();
-		driver.findElement(By.xpath("//div[@class='sort']//select")).click();
-        WebElement SortBy=driver.findElement(By.xpath("//div[@class='sort']//select"));
+		loginPOM.moveToEthnicLinkClick();
+//		driver.findElement(By.xpath("//div[@class='sort']//select")).click();
+//      WebElement SortBy=driver.findElement(By.xpath("//div[@class='sort']//select"));
+		loginPOM.clickSortLink();
+		WebElement SortBy=loginPOM.SortLink();
 		String dropdownvalues=SortBy.getText();
 		System.out.println(dropdownvalues);
 		Select SortList=new Select(SortBy);
         SortList.selectByVisibleText("Name (A - Z)");
         Thread.sleep(8000); 
-        driver.findElement(By.xpath("//div[@class='sort']//select")).click();
+//        driver.findElement(By.xpath("//div[@class='sort']//select")).click();
+        loginPOM.clickSortLink();
 		driver.navigate().refresh();
-		Select sel = new Select(driver.findElement(By.xpath("//div[@class='sort']//select")));
+		Select sel = new Select(SortBy);
 		sel.selectByVisibleText("Rating (Highest)");
         Thread.sleep(3000);
 	}

@@ -2,64 +2,64 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-30T00:24:58 IST" name="Retail Project testing" finished-at="2020-06-30T00:27:29 IST" duration-ms="151336">
+  <suite started-at="2020-06-30T09:33:09 IST" name="Retail Project testing" finished-at="2020-06-30T09:35:33 IST" duration-ms="144610">
     <groups>
     </groups>
-    <test started-at="2020-06-30T00:24:58 IST" name="testCase1" finished-at="2020-06-30T00:25:45 IST" duration-ms="47089">
+    <test started-at="2020-06-30T09:33:09 IST" name="testCase1" finished-at="2020-06-30T09:33:50 IST" duration-ms="41300">
       <class name="RetailProject.PasswordValidation">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T00:24:58 IST" name="setUpBeforeClass" finished-at="2020-06-30T00:24:58 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T09:33:09 IST" name="setUpBeforeClass" finished-at="2020-06-30T09:33:09 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T00:24:58 IST" name="setUp" finished-at="2020-06-30T00:25:17 IST" duration-ms="18672" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T09:33:09 IST" name="setUp" finished-at="2020-06-30T09:33:25 IST" duration-ms="15907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginTest()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T00:25:17 IST" name="validLoginTest" finished-at="2020-06-30T00:25:43 IST" duration-ms="26445" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T09:33:25 IST" name="validLoginTest" finished-at="2020-06-30T09:33:48 IST" duration-ms="23441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T00:25:43 IST" name="tearDown" finished-at="2020-06-30T00:25:45 IST" duration-ms="1890" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.PasswordValidation@33afa13b]" started-at="2020-06-30T09:33:48 IST" name="tearDown" finished-at="2020-06-30T09:33:50 IST" duration-ms="1900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- RetailProject.PasswordValidation -->
     </test> <!-- testCase1 -->
-    <test started-at="2020-06-30T00:25:45 IST" name="testCase2" finished-at="2020-06-30T00:26:42 IST" duration-ms="56687">
+    <test started-at="2020-06-30T09:33:50 IST" name="testCase2" finished-at="2020-06-30T09:34:49 IST" duration-ms="58815">
       <class name="RetailProject.SearchProductsDisplay">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T00:25:45 IST" name="setUpBeforeClass" finished-at="2020-06-30T00:25:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T09:33:50 IST" name="setUpBeforeClass" finished-at="2020-06-30T09:33:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T00:25:45 IST" name="setUp" finished-at="2020-06-30T00:25:59 IST" duration-ms="14368" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T09:33:50 IST" name="setUp" finished-at="2020-06-30T09:34:05 IST" duration-ms="15114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SortingTest()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T00:25:59 IST" name="SortingTest" finished-at="2020-06-30T00:26:40 IST" duration-ms="40375" status="PASS">
+        <test-method signature="SortingTest()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T09:34:05 IST" name="SortingTest" finished-at="2020-06-30T09:34:47 IST" duration-ms="41866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SortingTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T00:26:40 IST" name="tearDown" finished-at="2020-06-30T00:26:42 IST" duration-ms="1932" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.SearchProductsDisplay@56528192]" started-at="2020-06-30T09:34:47 IST" name="tearDown" finished-at="2020-06-30T09:34:49 IST" duration-ms="1830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- RetailProject.SearchProductsDisplay -->
     </test> <!-- testCase2 -->
-    <test started-at="2020-06-30T00:26:42 IST" name="testCase3" finished-at="2020-06-30T00:27:29 IST" duration-ms="47351">
+    <test started-at="2020-06-30T09:34:49 IST" name="testCase3" finished-at="2020-06-30T09:35:33 IST" duration-ms="44412">
       <class name="RetailProject.AddProductDetails">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T00:26:42 IST" name="setUpBeforeClass" finished-at="2020-06-30T00:26:42 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T09:34:49 IST" name="setUpBeforeClass" finished-at="2020-06-30T09:34:49 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T00:26:42 IST" name="setUp" finished-at="2020-06-30T00:26:56 IST" duration-ms="14488" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T09:34:49 IST" name="setUp" finished-at="2020-06-30T09:35:03 IST" duration-ms="13718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddProductInCart()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T00:26:56 IST" name="AddProductInCart" finished-at="2020-06-30T00:27:27 IST" duration-ms="30931" status="PASS">
+        <test-method signature="AddProductInCart()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T09:35:03 IST" name="AddProductInCart" finished-at="2020-06-30T09:35:31 IST" duration-ms="28861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T00:27:27 IST" name="tearDown" finished-at="2020-06-30T00:27:29 IST" duration-ms="1914" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AddProductDetails@3cc2931c]" started-at="2020-06-30T09:35:31 IST" name="tearDown" finished-at="2020-06-30T09:35:33 IST" duration-ms="1821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
