@@ -1,6 +1,6 @@
 package RetailProject;
 
-//To verify whether application allows admin to add category in categories page
+//Objective: To verify whether application allows admin to add category in categories page
 
 import java.io.FileInputStream;
 import java.io.IOException;
