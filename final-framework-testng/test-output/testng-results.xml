@@ -1,69 +1,745 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-05T21:20:31 IST" name="Retail Medium Level Project testing" finished-at="2020-07-05T21:21:34 IST" duration-ms="63030">
+  <suite started-at="2020-07-14T17:29:34 IST" name="Retail Complex Level Project testing" finished-at="2020-07-14T17:35:06 IST" duration-ms="331968">
     <groups>
     </groups>
-    <test started-at="2020-07-05T21:20:31 IST" name="testCase1" finished-at="2020-07-05T21:20:48 IST" duration-ms="16222">
-      <class name="RetailProject.AdminPasswordValidation">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.AdminPasswordValidation@33afa13b]" started-at="2020-07-05T21:20:31 IST" name="setUpBeforeClass" finished-at="2020-07-05T21:20:31 IST" duration-ms="10" status="PASS">
+    <test started-at="2020-07-14T17:29:34 IST" name="testCase1" finished-at="2020-07-14T17:30:58 IST" duration-ms="83260">
+      <class name="RetailProject.FilterProduct">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:29:34 IST" name="setUpBeforeClass" finished-at="2020-07-14T17:29:34 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AdminPasswordValidation@33afa13b]" started-at="2020-07-05T21:20:31 IST" name="setUp" finished-at="2020-07-05T21:20:42 IST" duration-ms="10320" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:29:35 IST" name="setUp" finished-at="2020-07-14T17:29:46 IST" duration-ms="10585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validAdminLoginTest()[pri:0, instance:RetailProject.AdminPasswordValidation@33afa13b]" started-at="2020-07-05T21:20:42 IST" name="validAdminLoginTest" finished-at="2020-07-05T21:20:46 IST" duration-ms="4064" status="PASS">
+        <test-method signature="multipleProductFilter(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:29:46 IST" name="multipleProductFilter" data-provider="excel-inputs1" finished-at="2020-07-14T17:29:57 IST" duration-ms="11531" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Integer vitae iaculis massa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validAdminLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AdminPasswordValidation@33afa13b]" started-at="2020-07-05T21:20:46 IST" name="tearDown" finished-at="2020-07-05T21:20:48 IST" duration-ms="1784" status="PASS">
+        </test-method> <!-- multipleProductFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:29:57 IST" name="tearDown" finished-at="2020-07-14T17:29:59 IST" duration-ms="1845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- RetailProject.AdminPasswordValidation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:29:59 IST" name="setUp" finished-at="2020-07-14T17:30:08 IST" duration-ms="9142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductFilter(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:08 IST" name="multipleProductFilter" data-provider="excel-inputs1" finished-at="2020-07-14T17:30:17 IST" duration-ms="8700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[515.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:17 IST" name="tearDown" finished-at="2020-07-14T17:30:19 IST" duration-ms="1825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:19 IST" name="setUp" finished-at="2020-07-14T17:30:28 IST" duration-ms="9178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductFilter(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:28 IST" name="multipleProductFilter" data-provider="excel-inputs1" finished-at="2020-07-14T17:30:36 IST" duration-ms="7932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[615.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:36 IST" name="tearDown" finished-at="2020-07-14T17:30:38 IST" duration-ms="1861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:38 IST" name="setUp" finished-at="2020-07-14T17:30:46 IST" duration-ms="8364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductFilter(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:46 IST" name="multipleProductFilter" data-provider="excel-inputs1" finished-at="2020-07-14T17:30:56 IST" duration-ms="9521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[615.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProduct@7a4ccb53]" started-at="2020-07-14T17:30:56 IST" name="tearDown" finished-at="2020-07-14T17:30:58 IST" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RetailProject.FilterProduct -->
     </test> <!-- testCase1 -->
-    <test started-at="2020-07-05T21:20:48 IST" name="testCase2" finished-at="2020-07-05T21:21:10 IST" duration-ms="22688">
-      <class name="RetailProject.AddCategory">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.AddCategory@56528192]" started-at="2020-07-05T21:20:48 IST" name="setUpBeforeClass" finished-at="2020-07-05T21:20:48 IST" duration-ms="1" status="PASS">
+    <test started-at="2020-07-14T17:30:58 IST" name="testCase2" finished-at="2020-07-14T17:32:28 IST" duration-ms="90677">
+      <class name="RetailProject.AddMultipleProduct">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:30:58 IST" name="setUpBeforeClass" finished-at="2020-07-14T17:30:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AddCategory@56528192]" started-at="2020-07-05T21:20:48 IST" name="setUp" finished-at="2020-07-05T21:20:57 IST" duration-ms="9503" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:30:58 IST" name="setUp" finished-at="2020-07-14T17:31:06 IST" duration-ms="8746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addCategoryTest()[pri:0, instance:RetailProject.AddCategory@56528192]" started-at="2020-07-05T21:20:57 IST" name="addCategoryTest" finished-at="2020-07-05T21:21:09 IST" duration-ms="11372" status="PASS">
+        <test-method signature="multipleProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:31:06 IST" name="multipleProductAdd" data-provider="excel-inputs2" finished-at="2020-07-14T17:31:19 IST" duration-ms="12240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20000.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TV]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AddCategory@56528192]" started-at="2020-07-05T21:21:09 IST" name="tearDown" finished-at="2020-07-05T21:21:10 IST" duration-ms="1807" status="PASS">
+        </test-method> <!-- multipleProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:31:19 IST" name="tearDown" finished-at="2020-07-14T17:31:20 IST" duration-ms="1827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- RetailProject.AddCategory -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:31:20 IST" name="setUp" finished-at="2020-07-14T17:31:32 IST" duration-ms="11916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:31:32 IST" name="multipleProductAdd" data-provider="excel-inputs2" finished-at="2020-07-14T17:31:43 IST" duration-ms="10776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Onida]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Onida]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[18000.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:31:43 IST" name="tearDown" finished-at="2020-07-14T17:31:45 IST" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:31:45 IST" name="setUp" finished-at="2020-07-14T17:31:54 IST" duration-ms="8643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:31:54 IST" name="multipleProductAdd" data-provider="excel-inputs2" finished-at="2020-07-14T17:32:04 IST" duration-ms="10377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cricket Bat]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12000.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:32:04 IST" name="tearDown" finished-at="2020-07-14T17:32:06 IST" duration-ms="1962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:32:06 IST" name="setUp" finished-at="2020-07-14T17:32:15 IST" duration-ms="9175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:32:15 IST" name="multipleProductAdd" data-provider="excel-inputs2" finished-at="2020-07-14T17:32:26 IST" duration-ms="11132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Asus]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asus Zenfone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7000.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Electronic]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.AddMultipleProduct@6e0dec4a]" started-at="2020-07-14T17:32:26 IST" name="tearDown" finished-at="2020-07-14T17:32:28 IST" duration-ms="1934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RetailProject.AddMultipleProduct -->
     </test> <!-- testCase2 -->
-    <test started-at="2020-07-05T21:21:10 IST" name="testCase3" finished-at="2020-07-05T21:21:34 IST" duration-ms="24016">
-      <class name="RetailProject.EditCategory">
-        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.EditCategory@3cc2931c]" started-at="2020-07-05T21:21:10 IST" name="setUpBeforeClass" finished-at="2020-07-05T21:21:10 IST" duration-ms="1" status="PASS">
+    <test started-at="2020-07-14T17:32:28 IST" name="testCase3" finished-at="2020-07-14T17:33:52 IST" duration-ms="83641">
+      <class name="RetailProject.InvalidDetailsAddProduct">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:32:28 IST" name="setUpBeforeClass" finished-at="2020-07-14T17:32:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.EditCategory@3cc2931c]" started-at="2020-07-05T21:21:10 IST" name="setUp" finished-at="2020-07-05T21:21:19 IST" duration-ms="8764" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:32:28 IST" name="setUp" finished-at="2020-07-14T17:32:37 IST" duration-ms="8670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="editCategoryTest()[pri:0, instance:RetailProject.EditCategory@3cc2931c]" started-at="2020-07-05T21:21:19 IST" name="editCategoryTest" finished-at="2020-07-05T21:21:33 IST" duration-ms="13414" status="PASS">
+        <test-method signature="invalidProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:32:37 IST" name="invalidProductAdd" data-provider="excel-inputs3" finished-at="2020-07-14T17:32:46 IST" duration-ms="8657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editCategoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.EditCategory@3cc2931c]" started-at="2020-07-05T21:21:33 IST" name="tearDown" finished-at="2020-07-05T21:21:34 IST" duration-ms="1831" status="PASS">
+        </test-method> <!-- invalidProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:32:46 IST" name="tearDown" finished-at="2020-07-14T17:32:48 IST" duration-ms="2101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- RetailProject.EditCategory -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:32:48 IST" name="setUp" finished-at="2020-07-14T17:32:56 IST" duration-ms="8668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:32:56 IST" name="invalidProductAdd" data-provider="excel-inputs3" finished-at="2020-07-14T17:33:06 IST" duration-ms="9447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Onida]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:33:06 IST" name="tearDown" finished-at="2020-07-14T17:33:08 IST" duration-ms="1846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:33:08 IST" name="setUp" finished-at="2020-07-14T17:33:17 IST" duration-ms="9621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:33:17 IST" name="invalidProductAdd" data-provider="excel-inputs3" finished-at="2020-07-14T17:33:27 IST" duration-ms="9912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cricket Bat]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:33:27 IST" name="tearDown" finished-at="2020-07-14T17:33:29 IST" duration-ms="1855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:33:29 IST" name="setUp" finished-at="2020-07-14T17:33:39 IST" duration-ms="10188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidProductAdd(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:33:39 IST" name="invalidProductAdd" data-provider="excel-inputs3" finished-at="2020-07-14T17:33:50 IST" duration-ms="10750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[as]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Asus Zenfone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7000.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Electronic]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidProductAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.InvalidDetailsAddProduct@20d28811]" started-at="2020-07-14T17:33:50 IST" name="tearDown" finished-at="2020-07-14T17:33:52 IST" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RetailProject.InvalidDetailsAddProduct -->
     </test> <!-- testCase3 -->
-  </suite> <!-- Retail Medium Level Project testing -->
+    <test started-at="2020-07-14T17:33:52 IST" name="testCase4" finished-at="2020-07-14T17:35:06 IST" duration-ms="74314">
+      <class name="RetailProject.FilterProductUsingDB">
+        <test-method is-config="true" signature="setUpBeforeClass()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:33:52 IST" name="setUpBeforeClass" finished-at="2020-07-14T17:33:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:33:52 IST" name="setUp" finished-at="2020-07-14T17:34:01 IST" duration-ms="8690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductFilterDB(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:01 IST" name="multipleProductFilterDB" data-provider="db-inputs" finished-at="2020-07-14T17:34:09 IST" duration-ms="8293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Integer vitae iaculis massa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductFilterDB -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:09 IST" name="tearDown" finished-at="2020-07-14T17:34:11 IST" duration-ms="1830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:11 IST" name="setUp" finished-at="2020-07-14T17:34:20 IST" duration-ms="8529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductFilterDB(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:20 IST" name="multipleProductFilterDB" data-provider="db-inputs" finished-at="2020-07-14T17:34:28 IST" duration-ms="7870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[515.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductFilterDB -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:28 IST" name="tearDown" finished-at="2020-07-14T17:34:29 IST" duration-ms="1828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:29 IST" name="setUp" finished-at="2020-07-14T17:34:38 IST" duration-ms="8552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductFilterDB(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:38 IST" name="multipleProductFilterDB" data-provider="db-inputs" finished-at="2020-07-14T17:34:46 IST" duration-ms="7809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[615.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductFilterDB -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:46 IST" name="tearDown" finished-at="2020-07-14T17:34:48 IST" duration-ms="1884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:48 IST" name="setUp" finished-at="2020-07-14T17:34:56 IST" duration-ms="8634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="multipleProductFilterDB(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:34:56 IST" name="multipleProductFilterDB" data-provider="db-inputs" finished-at="2020-07-14T17:35:04 IST" duration-ms="8097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[615.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SKU-003]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Disabled]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleProductFilterDB -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:RetailProject.FilterProductUsingDB@4b14c583]" started-at="2020-07-14T17:35:04 IST" name="tearDown" finished-at="2020-07-14T17:35:06 IST" duration-ms="1867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- RetailProject.FilterProductUsingDB -->
+    </test> <!-- testCase4 -->
+  </suite> <!-- Retail Complex Level Project testing -->
 </testng-results>

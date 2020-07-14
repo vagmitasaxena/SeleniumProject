@@ -19,7 +19,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  *      access.
  */
 public class ApachePOIExcelRead {
-	public  String [][] getExcelContent(String fileName) {
+	public  String [][] getExcelContent(String fileName, String sheetName) {
 		int rowCount =0; 
 		String [][] list1 = null; 
 		
@@ -31,18 +31,22 @@ public class ApachePOIExcelRead {
 			XSSFWorkbook workbook = new XSSFWorkbook(file);
 
 			// Get first/desired sheet from the workbook
-			XSSFSheet sheet = workbook.getSheetAt(0);
+			//XSSFSheet sheet = workbook.getSheetAt(0);
+			XSSFSheet sheet = workbook.getSheet(sheetName);
 			
 			int rowTotal = sheet.getLastRowNum();
 
 			if ((rowTotal > 0) || (sheet.getPhysicalNumberOfRows() > 0)) {
-			    rowTotal++;
+	//		    rowTotal++;
 			}
 			
 			
 			// Iterate through each rows one by one
 			Iterator<Row> rowIterator = sheet.iterator();
 			 list1 = new String[rowTotal][2];
+			 
+			 if (rowIterator.hasNext())
+			 rowIterator.next();
 			 
 			while (rowIterator.hasNext()) {
 				Row row = rowIterator.next();
@@ -52,8 +56,7 @@ public class ApachePOIExcelRead {
 				int cellCount = 0; 
 				int noOfColumns = row.getLastCellNum(); 
 				String[] tempList1 = new String[noOfColumns];
-				
-				
+							
 				
 				while (cellIterator.hasNext()) {
 					Cell cell = cellIterator.next();
@@ -70,6 +73,9 @@ public class ApachePOIExcelRead {
 						if(cell.getStringCellValue()!=null){
 							tempList1[cellCount] =cell.getStringCellValue();
 						}
+						break;
+					case Cell.CELL_TYPE_BLANK:
+							tempList1[cellCount] ="";
 						break;
 					}
 					cellCount ++; 
@@ -88,14 +94,4 @@ public class ApachePOIExcelRead {
 		return list1;
 	}
 
-	public static void main(String[] args) {
-		String fileName = "C:/Users/Naveen/Desktop/Testing.xlsx";
-		
-		for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName)){
-			for(String  tt : temp){
-				System.out.println(tt);
-			}
-		}
-
-	}
 }

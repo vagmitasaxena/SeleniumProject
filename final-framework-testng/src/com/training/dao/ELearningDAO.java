@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Properties;
 
 import com.training.bean.LoginBean;
+import com.training.bean.FilterProductBean;
 import com.training.connection.GetConnection;
 import com.training.utility.LoadDBDetails;
 
@@ -25,6 +26,37 @@ public class ELearningDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public List<FilterProductBean> getFilterProducts(){
+		String sql = properties.getProperty("get.filterProducts"); 
+		
+		GetConnection gc  = new GetConnection(); 
+		List<FilterProductBean> list = null;
+		try {
+			gc.ps1 = GetConnection.getMySqlConnection(LoadDBDetails.getDBDetails()).prepareStatement(sql); 
+			list = new ArrayList<FilterProductBean>(); 
+			
+			gc.rs1 = gc.ps1.executeQuery(); 
+			
+			while(gc.rs1.next()) {
+			
+				FilterProductBean temp = new FilterProductBean(); 
+				temp.setProductName(gc.rs1.getString(1));
+				temp.setPrice(gc.rs1.getString(2));
+				temp.setStatus(gc.rs1.getString(3));
+				temp.setModel(gc.rs1.getString(4));
+				temp.setQuantity(gc.rs1.getString(5));
+				temp.setImage(gc.rs1.getString(6));
+
+				list.add(temp); 
+				
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return list; 
 	}
 	
 	public List<LoginBean> getLogins(){
@@ -55,7 +87,7 @@ public class ELearningDAO {
 	}
 	
 	public static void main(String[] args) {
-		new ELearningDAO().getLogins().forEach(System.out :: println);
+		new ELearningDAO().getFilterProducts().forEach(System.out :: println);
 	}
 	
 	
